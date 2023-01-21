@@ -5,6 +5,8 @@
  * by a pivot
  * @array: array to partition
  * @size: size of array
+ * @high: higher subarray
+ * @low: lower subarray
  *
  * Return: pivot index
  */
@@ -50,7 +52,7 @@ int partition(int *array, int size, int high, int low)
 void quickSort(int *array, int size, int high, int low)
 {
 	int pivot;
-	
+
 	if (low < high)
 	{
 		pivot = partition(array, size, high, low);
